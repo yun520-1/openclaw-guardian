@@ -52,6 +52,9 @@ setup(
     },
     include_package_data=True,
     package_data={
-        "": ["*.md", "*.yaml", "*.sh", "requirements.txt"],
+        "": ["*.md", "*.yaml", "*.sh", "requirements.txt", "LICENSE"],
     },
+    data_files=[
+        ("", ["requirements.txt", "LICENSE"]),
+    ],
 )
