@@ -1,0 +1,10 @@
+# OpenClaw Guardian - 依赖包
+
+# 系统监控
+psutil>=5.9.0
+
+# 配置文件处理
+PyYAML>=6.0
+
+# 可选：异步支持
+# aiohttp>=3.8.0  # 如果需要 HTTP 请求

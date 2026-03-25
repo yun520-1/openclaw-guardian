@@ -1,0 +1,60 @@
+{
+  "name": "openclaw-guardian",
+  "version": "1.0.0",
+  "description": "OpenClaw 安全卫士 - 自动监控、检测和修复 OpenClaw 运行时的安全问题",
+  "author": "1 号小虫子 · 严谨专业版",
+  "license": "MIT",
+  "keywords": [
+    "openclaw",
+    "security",
+    "monitor",
+    "guardian",
+    "automation",
+    "safety"
+  ],
+  "main": "main.py",
+  "python_version": ">=3.8",
+  "dependencies": [
+    "psutil>=5.9.0",
+    "PyYAML>=6.0"
+  ],
+  "scripts": {
+    "start": "python3 main.py --daemon",
+    "check": "python3 main.py --check",
+    "scan": "python3 main.py --scan",
+    "status": "python3 main.py --status",
+    "install": "./install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/openclaw-guardian"
+  },
+  "homepage": "https://github.com/openclaw/openclaw-guardian#readme",
+  "bugs": {
+    "url": "https://github.com/openclaw/openclaw-guardian/issues"
+  },
+  "features": [
+    "实时监控 OpenClaw 进程状态",
+    "系统资源监控（CPU、内存、磁盘）",
+    "日志文件异常检测",
+    "关键配置文件完整性检查",
+    "技能文件语法扫描",
+    "敏感数据泄露检测",
+    "配置文件自动备份与修复",
+    "日志文件自动清理",
+    "进程异常自动重启",
+    "Token 消耗优化",
+    "智能搜索协助"
+  ],
+  "config": {
+    "check_interval_seconds": 1800,
+    "deep_scan_time": "03:00",
+    "max_backups": 10,
+    "log_retention_days": 7
+  },
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "category": "security"
+}
