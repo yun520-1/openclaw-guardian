@@ -12,6 +12,9 @@ if [ -d "venv" ]; then
     source venv/bin/activate
 fi
 
+# 设置 PYTHONPATH，确保能导入 utils 模块
+export PYTHONPATH="$SCRIPT_DIR:$PYTHONPATH"
+
 # 执行自我优化
 python3 core/self_optimizer.py >> logs/optimization.log 2>&1
 
